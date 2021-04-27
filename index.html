@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+         body {
+            background-image: url('images/bg.jpg');
+        }
+        .image {
+            width: 1600px;
+            height: 500px;
+            background-image: url('images/bg7.png');
+            /* margin-left: 80px;
+            margin-top: 50px;
+            border-radius: 10px; */
+        }
+        @font-face {
+            font-family: 'name';
+            src: url('fonts/YeonSung-Regular.ttf');
+        }
+        h1 {
+            font-family: 'name';
+            color: rgba(0, 162, 255, 0.781);
+            position: relative;
+            top: 290px;
+            margin-left: 700px;
+            font-size: 100px;
+        }
+        .logo {
+            position: relative;
+            top: 180px;
+            left: 20px;
+        }
+        .nevigate {
+            width: 1500px;
+            /* height: 58px; */
+            background-color: rgba(255, 255, 255, 0.705);
+            margin-left: 40px;
+            border-radius: 10px;
+        }
+        a {
+            font-size: 25px;
+        }
+        #logo1 {
+            position: relative;
+            left: -770px;
+        }
+        @font-face {
+            font-family: 'name';
+            src: url('fonts/YeonSung-Regular.ttf');
+        }
+        #txt {
+            font-family: 'name';
+            font-size: 29px;
+        }
+        @font-face {
+            font-family: 'head';
+            src: url('fonts/FredokaOne-Regular.ttf');
+        }
+        #head {
+            font-family: 'head';
+            font-size: 40px;
+            margin-top: 20px;
+            margin-left: 70px;
+            color: rgba(0, 162, 255, 0.781);
+        }
+        #item1 {
+            width: 700px;
+            height: 290px;
+            background-image: url('images/item1.PNG');
+            margin-left: 40px;
+            border-radius: 10px;
+        }
+        #subhead1 {
+            width: 150px;
+            height: 200px;
+            background-color: rgba(211, 211, 211, 0.87);
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            position: relative;
+            top: 45px;
+            left: 550px;
+        }
+        #main {
+            width: 1500px;
+            height: 700px;
+            background-color: rgba(255, 255, 255, 0.438);
+            margin-left: 40px;
+            border-radius: 15px;
+        }
+        #sale   {
+            font-family: 'head';
+            font-weight: bold;
+            font-size: 22px;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            top: 30px;
+            color: rgba(0, 162, 255, 0.781);
+        }
+        #qoute {
+            font-family: 'head';
+            font-size: 19px;
+            text-align: center;
+            /* padding: 8px; */
+        }
+        #item2 {
+            width: 700px;
+            height: 290px;
+            background-image: url('images/item2.jpeg');
+            margin-left: 40px;
+            border-radius: 10px;
+        }
+        @font-face {
+            font-family: 'sea';
+            src: url('fonts/Pacifio-Regular.ttf');
+        }
+        #ad {
+            font-family: 'sea';
+            color: papayawhip;
+            font-style: italic;
+            margin-left: 280px;
+            position: relative;
+            top: 40px;
+            font-size: 25px; 
+        }
+        #subhead2 {
+            width: 150px;
+            height: 200px;
+            background-color: rgba(211, 211, 211, 0.87);
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            position: relative;
+            top: 9px;
+            left: 550px;
+        }
+        #item3 {
+            width: 700px;
+            height: 290px;
+            background-image: url('images/item3.jpeg');
+            margin-left: 40px;
+            border-radius: 10px;
+            position: relative;
+            left: 720px;
+            top: -627px;
+        }
+        #subhead3 {
+            width: 150px;
+            height: 200px;
+            background-color: rgba(211, 211, 211, 0.87);
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 10px;
+            position: relative;
+            top: 45px;
+            left: 550px;
+        }
+        #item4 {
+            width: 700px;
+            height: 290px;
+            background-image: url('images/item4.jpg');
+            margin-left: 40px;
+            border-radius: 10px;
+            position: relative;
+            left: 720px;
+            top: -627px;
+        }
+        #subhead4 {
+            width: 150px;
+            height: 200px;
+            background-color: rgba(211, 211, 211, 0.87);
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 10px;
+            position: relative;
+            top: 45px;
+            left: 550px;
+        }
+        #policy {
+            width: 1500px;
+            height: 300px;
+            background-color: rgba(255, 255, 255, 0.438);
+            margin-top: 30px;
+            margin-left: 40px;
+            border-radius: 15px;
+        }
+        @font-face {
+            font-family: 'info';
+            src: url('fonts/Nosifer-Regular-ttf');
+        }
+        .info {
+            width: 150px;
+            font-family: 'name';
+            font-weight: bolder;
+            font-size: 20px;
+            text-align: center;
+
+        }
+        .imga {
+            position: relative;
+            top: 23px;
+            margin-left: 330px;
+        }
+        .info1 {
+            width: 150px;
+            font-family: 'name';
+            font-weight: bolder;
+            font-size: 25px;
+            text-align: center;
+
+        }
+        .imga1 {
+            position: relative;
+            top: -255px;
+            margin-left: 630px;
+        }
+        .info3 {
+            width: 150px;
+            font-family: 'name';
+            font-weight: bolder;
+            font-size: 25px;
+            text-align: center;
+
+        }
+        .imga3 {
+            position: relative;
+            top: -513px;
+            margin-left: 930px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <h1>CASH <sub>TO</sub> HASH</h1>
+    </div>
+    <br />
+    <div class="nevigate">
+            <ul class="nav nav-tabs justify-content-end">
+                <div id="logo1">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/hiclipart.com.png" width="40" height="37" class="d-inline-block align-left " alt="">
+                        <span id="txt">CASH <sub>TO</sub> HASH</span>
+                      </a>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="shop.html" target="_blank">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html" target="_blank">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html" target="_blank">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html" tabindex="-1" aria-disabled="true">Logout</a>
+                </li>
+            </ul>
+    </div>
+    <div id="main">
+        <div id="head">
+            Grand Products
+        </div>
+        <br>
+        <div id="item1">
+            <div id="subhead1">
+                <p id="sale">UP TO 12% OFF</p>
+                <p id="qoute">Cook Heathy, Eat Healthy</p>
+            </div>
+        </div>
+        <br>
+        <div id="item2">
+            <span id="ad"> Pearls <sup>n</sup> Diamond </span>
+            <div id="subhead2">
+                <p id="sale">UP TO 50% OFF</p>
+                <p id="qoute">Best Quality,Low Price</p>
+            </div>
+        </div>
+        <br>
+        <div id="item3">
+            <div id="subhead3">
+                <p id="sale">UP TO 70% OFF</p>
+                <p id="qoute">Finest Product </p>
+            </div>
+        </div><br>
+        <div id="item4">
+            <div id="subhead4">
+                <p id="sale">UP TO 10% OFF</p>
+                <p id="qoute">Best Show To Best Wear</p>
+            </div>
+        </div>
+    </div>
+    <div id="policy">
+        <div id="24">
+            <div class="imga">
+                <img src="images/24.jpg" alt="24 hours" width="150" height="150">
+                <br />
+                <br />
+                <p class="info">24 HOURS SERVICE IN ALL 7 DAYS</p>
+            </div>
+        </div>
+        <div id="ex">
+            <div class="imga1">
+                <img src="images/policy.png" alt="Exchange Policy" width="150" height="150">
+                <br />
+                <br />
+                <p class="info1">Easy Exchange Policy</p>
+            </div>
+        </div>
+        <div id="fast">
+            <div class="imga3">
+                <img src="images/fast.jpg" alt="Fast Delivery" width="150" height="150">
+                <br />
+                <br />
+                <p class="info3">Fast Delivery</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
